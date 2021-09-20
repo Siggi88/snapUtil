@@ -20,13 +20,18 @@ void
 usage(void)
 {
 	(void) fprintf(stderr, "Usage:\n");
+	(void) fprintf(stderr, "List snapshots:\n");
 	(void) fprintf(stderr, "\t%s -l <vol>\n", g_pname);
+	(void) fprintf(stderr, "Create a snapshot:\n");
 	(void) fprintf(stderr, "\t%s -c <snap> <vol>\n", g_pname);
+	(void) fprintf(stderr, "Rename a snapshot:\n");
 	(void) fprintf(stderr, "\t%s -n <snap> <newname> <vol>\n", g_pname);
+	(void) fprintf(stderr, "Delete a snapshot:\n");
 	(void) fprintf(stderr, "\t%s -d <snap> <vol>\n", g_pname);
+	(void) fprintf(stderr, "Revert to a snapshot:\n");
 	(void) fprintf(stderr, "\t%s -r <snap> <vol>\n", g_pname);
+	(void) fprintf(stderr, "Mount a snapshot:\n");
 	(void) fprintf(stderr, "\t%s -s <snap> <vol> <mntpnt>\n", g_pname);
-	(void) fprintf(stderr, "\t%s -u <snap> <vol>\n", g_pname);
 	exit(2);
 }
 
